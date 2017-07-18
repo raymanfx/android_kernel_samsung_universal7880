@@ -1,0 +1,35 @@
+/*
+ * SAMSUNG UNIVERSAL7880 board device tree source
+ *
+ * Copyright (c) 2016 Samsung Electronics Co., Ltd.
+ *		http://www.samsung.com
+ *
+ * This program is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License version 2 as
+ * published by the Free Software Foundation.
+*/
+#include "exynos7880-a5y17lte-common-battery.dtsi"
+
+/ {
+	battery_params {
+			battery,battery_table3 = <204 11 61 11 175 10 34 10 170 9
+						55 9 206 8 107 8 230 7 166 7
+						77 7 235 6 174 6 130 6 95 6
+						67 6 36 6 253 5 197 5 147 5
+						42 5 168 1 245 8 135 8 24 8
+						170 7 59 7 205 6 94 6 240 5
+						129 5 18 5 164 4 53 4 199 3
+						88 3 234 2 123 2 13 2 158 1
+						48 1 193 0 83 0 228 15>;
+
+			battery,battery_table4 = <62 62 61 60 61 60 59 60 60 58
+						58 58 58 58 58 58 59 60 62 64
+						76 154>;
+
+			battery,batcap = <0xE0 0x2E 0xB8 0x0B>; /* [0x0E] [0x0F] [0x10] [0x11] */
+			battery,accum = <0x8 0x00>; /* [0x45] [0x44] */
+
+			battery,soc_arr_val = <11198 10658 10118 9579 9039 8499 7960 7420 6880 6340 5801 5261 4721 4182 3642 3102 2562 2023 1483 943 404 (-136)>;
+			battery,ocv_arr_val = <44746 44050 43354 42665 42078 41520 41006 40523 39872 39563 39127 38646 38349 38135 37966 37828 37676 37485 37211 36970 36453 32069>;
+	};
+};
